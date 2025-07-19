@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Todo List App</string>
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="task_name">Task Name</string>
+    <string name="mark_as_completed">Mark as completed</string>
+</resources>
