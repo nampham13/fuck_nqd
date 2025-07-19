@@ -70,4 +70,15 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.Liste
         taskList.remove(position);
         adapter.notifyItemRemoved(position);
     }
+
+    @Override
+    public void onTaskCompletionChanged(int position, boolean isCompleted) {
+        // Task completion status is already updated in the adapter
+        // This method can be used for additional logic like saving to database,
+        // logging, analytics, etc.
+        
+        // For now, we'll just ensure the adapter is notified of the change
+        // (though this is already handled in the adapter)
+        adapter.notifyItemChanged(position);
+    }
 }
